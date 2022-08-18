@@ -21,12 +21,8 @@ const Register = () => {
   return <p>這是註冊頁面</p>;
 };
 const Logout = () => {
-  let navigate = useNavigate();
-
-  return  <button onClick={() => {    navigate('/login')}} >Logout</button>
-  // function doLogout() {
-  //   navigate('/login')
-  // }
+  const navigate = useNavigate();
+  return  <button onClick={() => { navigate('/login')} } >Logout</button>
 };
 
 function App() {
